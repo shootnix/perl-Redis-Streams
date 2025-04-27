@@ -1,0 +1,15 @@
+{
+    "name": "Redis Streams Perl Dev",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "customizations": {
+      "vscode": {
+        "settings": {
+          "terminal.integrated.shell.linux": "/bin/bash"
+        }
+      }
+    },
+    "postCreateCommand": "carton install || true",
+    "remoteUser": "root"
+  }
